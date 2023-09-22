@@ -7,7 +7,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" np&& exit 1",
     "setup": "npm i",
-    "start": "node functions/index.js",
     "dev": "nodemon ./functions/index.js",
     "seedDb": "node src/db/seedDb.js"
   },
