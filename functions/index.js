@@ -1,8 +1,9 @@
 import dotenv from "dotenv";
 dotenv.config();
-import { app } from "./app.js";
-import { connectDB } from "./db/connectDB.js";
-import express from "express";
+import { app } from "../src/app.js";
+import { connectDB } from "../src/db/connectDB.js";
+import serverless from "serverless-http";
+// import express from "express";
 
 const port = process.env.PORT;
 if (port === null) {
@@ -29,5 +30,6 @@ async function startServer() {
 //     )
 //   );
 // }
+export const handler = serverless(app);
 
 startServer();
