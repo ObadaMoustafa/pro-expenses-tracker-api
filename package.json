@@ -8,6 +8,8 @@
     "test": "echo \"Error: no test specified\" np&& exit 1",
     "start":"netlify dev",
     "build":"gatsby build",
+    "prod": "npm run build; npm run build:lambda",
+    "build:lambda": "netlify-lambda build functions",
     "setup": "npm i",
     "dev": "nodemon ./functions/index.js",
     "seedDb": "node src/db/seedDb.js"
