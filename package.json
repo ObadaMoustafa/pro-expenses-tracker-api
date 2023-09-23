@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build":"gatsby build",
     "prod": "npm run build; npm run build:lambda",
-    "start":"netlify dev",
+    "start":"node functions/index.js",
+    "build":"node functions/index.js",
     "start:lambda": "netlify-lambda serve functions",
     "build:lambda": "netlify-lambda build functions",
     "serve": "gatsby serve",
