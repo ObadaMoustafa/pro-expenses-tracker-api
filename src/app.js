@@ -13,6 +13,9 @@ app.use(express.json());
 //let everyone use our api
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.json({ success: true, page: "root page" });
+});
 app.use("/api/test", testRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/expenses", expensesRouter);
