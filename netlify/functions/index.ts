@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
-import { app } from "../src/app.js";
-import { connectDB } from "../src/db/connectDB.js";
+import { app } from "../../src/app.js";
+import { connectDB } from "../../src/db/connectDB.js";
 import serverless from "serverless-http";
 // import express from "express";
 

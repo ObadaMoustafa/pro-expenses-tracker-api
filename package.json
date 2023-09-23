@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" np&& exit 1",
+    "start":"netlify dev",
+    "build":"gatsby build",
     "setup": "npm i",
     "dev": "nodemon ./functions/index.js",
     "seedDb": "node src/db/seedDb.js"
