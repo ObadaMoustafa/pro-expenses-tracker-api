@@ -3,6 +3,7 @@
   functions = "api/"
 
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  force = true
+  from = "/api/*"
+  to = "/.netlify/functions/api/:whatever"
   status = 200
