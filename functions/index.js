@@ -6,8 +6,8 @@ import serverless from "serverless-http";
 // import express from "express";
 
 const port = process.env.PORT;
-if (port === null) {
-  throw new Error("port is null it seems you forgot to create env file");
+if (!port) {
+  throw new Error(`port is ${port} it seems you forgot to create env file`);
 }
 
 async function startServer() {
