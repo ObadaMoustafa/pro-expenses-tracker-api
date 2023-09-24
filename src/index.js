@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 import { connectDB } from "./db/connectDB.js";
-import { app } from "../app.js";
+import { app } from "../api.js";
 
 const port = process.env.PORT;
 if (!port) {
