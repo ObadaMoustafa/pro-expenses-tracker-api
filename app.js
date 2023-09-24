@@ -1,10 +1,11 @@
 import express from "express";
 import cors from "cors";
-import testRouter from "../../src/routes/test.js";
-import usersRouter from "../../src/routes/users.js";
-import expensesRouter from "../../src/routes/expenses.js";
-import debtsRouter from "../../src/routes/debts.js";
+import testRouter from "./src/routes/test.js";
+import usersRouter from "./src/routes/users.js";
+import expensesRouter from "./src/routes/expenses.js";
+import debtsRouter from "./src/routes/debts.js";
 import serverless from "serverless-http";
+
 export const app = express();
 
 // use json middleware
