@@ -7,9 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" np&& exit 1",
     "setup": "npm i",
-    "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js",
-    "seedDb": "node src/db/seedDb.js"
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js",
+    "seedDb": "node db/seedDb.js"
   },
   "keywords": [],
   "author": "",
